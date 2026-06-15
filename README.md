@@ -131,7 +131,30 @@ mvn clean package
 
 ## サーバーへの配置
 
-ビルドした jar をサーバーの `plugins/` に置いてサーバーを再起動します。
+サーバーの `plugins/` に jar を置いてサーバーを再起動します。jar の入手方法は次の 2 通りです。
+
+### A. リリース版を使う（ビルド不要・推奨）
+
+[Releases](https://github.com/astail/minecraft-WaypointTools/releases) から最新の `WaypointTools-<version>.jar` をダウンロードします。JDK や Maven は不要です。
+
+```bash
+# 最新リリースの jar をダウンロード（gh CLI を使う場合）
+gh release download --repo astail/minecraft-WaypointTools --pattern '*.jar'
+
+# または curl で直接（latest を取得）
+curl -LO "$(curl -s https://api.github.com/repos/astail/minecraft-WaypointTools/releases/latest \
+  | grep browser_download_url | grep '\.jar' | cut -d '"' -f 4)"
+```
+
+ダウンロードした jar を下記「配置」のとおり `plugins/` に置けば完了です。
+
+### B. 自分でビルドする
+
+[ビルド](#ビルド) の手順で `target/WaypointTools-1.0.0.jar` を生成します。
+
+### 配置
+
+入手した jar をサーバーの `plugins/` に置いてサーバーを再起動します。
 
 ```bash
 # バインドマウントしている場合（ホスト側 plugins ディレクトリへコピー）
