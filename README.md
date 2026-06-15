@@ -1,5 +1,7 @@
 # WaypointTools
 
+**日本語** | [English](README.en.md)
+
 Minecraft 公式 Waypoint（Locator Bar）機能の一部を、一般プレイヤーへ安全に開放する Paper プラグインです。
 
 - **`/wlist`** … `/waypoint list` 相当のウェイポイント一覧を表示
