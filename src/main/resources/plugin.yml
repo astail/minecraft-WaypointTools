@@ -1,0 +1,25 @@
+name: WaypointTools
+version: 1.0.0
+main: com.example.waypointtools.WaypointToolsPlugin
+description: "/waypoint の list と自分の色変更を一般プレイヤーに開放する /wlist・/wcolor を追加します。"
+api-version: '26.1.2'
+
+commands:
+  wlist:
+    description: "/waypoint list と同等のウェイポイント一覧を表示します。"
+    usage: "/wlist"
+    permission: wlist.use
+    permission-message: "§cこのコマンドを実行する権限がありません。"
+  wcolor:
+    description: "自分のウェイポイントの色を16進カラーで変更します。"
+    usage: "/wcolor <16進カラー|reset>"
+    permission: wcolor.use
+    permission-message: "§cこのコマンドを実行する権限がありません。"
+
+permissions:
+  wlist.use:
+    description: "/wlist コマンドの使用を許可します。"
+    default: true
+  wcolor.use:
+    description: "/wcolor コマンドの使用を許可します。"
+    default: true
