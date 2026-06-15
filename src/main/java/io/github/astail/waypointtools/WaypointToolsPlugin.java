@@ -1,4 +1,4 @@
-package com.example.waypointtools;
+package io.github.astail.waypointtools;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.PluginCommand;

@@ -1,4 +1,4 @@
-package com.example.waypointtools;
+package io.github.astail.waypointtools;
 
 import java.util.ArrayList;
 import java.util.Collections;

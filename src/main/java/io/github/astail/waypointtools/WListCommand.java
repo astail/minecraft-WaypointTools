@@ -1,4 +1,4 @@
-package com.example.waypointtools;
+package io.github.astail.waypointtools;
 
 import java.util.Collections;
 import java.util.List;

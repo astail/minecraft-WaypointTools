@@ -159,14 +159,14 @@ docker restart <コンテナ名>
 ├── deploy.sh
 ├── README.md
 └── src/main/
-    ├── java/com/example/waypointtools/
+    ├── java/io/github/astail/waypointtools/
     │   ├── WaypointToolsPlugin.java   # 本体（2コマンド登録）
     │   ├── WListCommand.java          # /wlist
     │   └── WColorCommand.java         # /wcolor
     └── resources/plugin.yml
 ```
 
-> `com.example` / `WaypointTools` / コマンド名は任意でリネーム可能です（pom.xml・各 `package`・`plugin.yml` を揃えて変更）。
+> パッケージ名（`io.github.astail.waypointtools`）/ `WaypointTools` / コマンド名は任意でリネーム可能です（pom.xml・各 `package`・`plugin.yml` を揃えて変更）。
 
 ---
 
